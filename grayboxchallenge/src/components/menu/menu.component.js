@@ -32,6 +32,10 @@ const Menu = () => {
     e.stopPropagation();
     setOpen(!open);
   };
+
+  const generateKey = (pre) => {
+    return `${ pre }_${ new Date().getTime() }`;
+  }
     
   
   if (data !== null) {    
@@ -45,12 +49,12 @@ const Menu = () => {
                   <span>GrayBox Challenge</span>
                 </div>
         </div>        
-        <div className={menuStatus} id="menu">
+        <div className={menuStatus} key={text} id="menu">
           <SubMenuTitle />
         <ul>
         {          
           data.filters.map(subGroups => (         
-            <div>              
+            <div key={ generateKey(subGroups) }>
                 <MenuLinks filters={subGroups} />              
             </div>
           ))        
@@ -63,7 +67,7 @@ const Menu = () => {
         <div className="container">
           {
             data.images.map(item => (
-              <div>
+              <div key={ generateKey(item.altText)}>
                 <Gallery alt={item.altText} source={item.imageUrl} />
               </div>
             ))
