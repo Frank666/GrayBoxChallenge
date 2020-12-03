@@ -14,9 +14,11 @@ This readme file is just a quick guide for the challenge develop in React for Gr
 
 1. Clone the repository and open you fav IDE 
 
-2. Open a terminal and run the command: `npm install` to retrieve all the dependencies for this project
+2. Open a terminal and move to folder `grayboxchallenge` using the command: `cd grayboxchallenge`
 
-3. Once is done, run the command: `npm start` and the project will run in `http://localhost:3000` :)
+3. Run the command: `npm install` to retrieve all the dependencies for this project
+
+4. Once is done, run the command: `npm start` and the project will run in `http://localhost:3000` :)
 
 ## Notes
 
@@ -24,7 +26,7 @@ This readme file is just a quick guide for the challenge develop in React for Gr
 
 2. My guess is because this endpoint is a `http` request instead a `https`request
 
-3. Sorry if the colors are not correct :( -I'm colorblind- 
+3. Sorry if the colors are not correct :(    -I'm colorblind- 
 
 4. I implemented functional components and also hooks for this challenge
 
