@@ -16,7 +16,7 @@ This readme file is just a quick guide for the challenge develop in React for Gr
 
 2. Open a terminal and run the command: `npm install` to retrieve all the dependencies for this project
 
-3. Once is done just run the command: `npm start` and the project will run in `http://localhost:3000` :)
+3. Once is done, run the command: `npm start` and the project will run in `http://localhost:3000` :)
 
 ## Notes
 
