@@ -4,7 +4,6 @@ import {useFetch} from '../hooks/useFetch'
 import MenuLinks from "./menuLinks.component"
 import GenericButton from '../utils/genericbutton.component';
 import SubMenuTitle from '../menu/subMenuTitle.component'
-import Content from "../content/content.component"
 import Gallery from '../gallery/gallery.component';
 
 const Menu = () => { 
