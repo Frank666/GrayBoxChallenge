@@ -20,7 +20,14 @@ This readme file is just a quick guide for the challenge develop in React for Gr
 
 ## Notes
 
-In order to consume the data from the API `http://codetestjson.s3-website-us-west-2.amazonaws.com/kittens.json` I used a proxy to retrieve the data.
+1. In order to consume the data from the API `http://codetestjson.s3-website-us-west-2.amazonaws.com/kittens.json` I used a proxy to retrieve the data.
 
-My guess is because this endpoint is a `http` instead a `https`request
+2. My guess is because this endpoint is a `http` request instead a `https`request
 
+3. Sorry if the colors are not correct :( -I'm colorblind- 
+
+4. I implemented functional components and also hooks for this challenge
+
+5. Hope this 'documentation' can help to understand the code
+
+6. Thanks for read this :)
