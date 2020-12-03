@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Gallery = () => {
+const Gallery = (altText) => {
     
     return (
-        <div>
-            GALLERY!!
-        </div>
-
+    <div>
+        <img alt={altText.alt} src={altText.source} />
+    </div>    
     )
 }
 

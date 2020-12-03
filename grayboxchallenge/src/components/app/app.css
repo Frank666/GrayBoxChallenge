@@ -6,6 +6,20 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background-size: contain;
+  text-align: center;
+  z-index: -1;
+}
+
+.dummy {
+  padding-top: 29%;
+}
+
+/******/
 .liBottomLine {
   border-bottom-color: #ffe7ff;
   border-bottom-style: solid;
@@ -26,7 +40,7 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-weight: 300;
-  font-size: 2em;
+  font-size: 2vw;
   line-height: 60px;
 }
 
@@ -147,6 +161,15 @@ li a {
   transform: none;
 }
 
+@media screen and (max-width: 601px) {
+  .menubar span {
+    font-size: 5vw;
+  }
+}
+
+/******/
+
+/******/
 .myButton {
   -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
   -webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
@@ -198,3 +221,4 @@ li a {
     top: 1px;
   }
 }
+/******/

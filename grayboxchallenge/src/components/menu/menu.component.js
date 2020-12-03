@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../app/app.css'
 import {useFetch} from '../hooks/useFetch'
 import MenuLinks from "./menuLinks.component"
-import Gallery from "../gallery/gallery.component"
 import GenericButton from '../utils/genericbutton.component';
 import SubMenuTitle from '../menu/subMenuTitle.component'
+import Content from "../content/content.component"
+import Gallery from '../gallery/gallery.component';
 
 const Menu = () => { 
 
@@ -60,8 +61,14 @@ const Menu = () => {
             </li>
           </ul>
           </div>
-        <div id="container">
-          <Gallery />
+        <div className="container">
+          {
+            data.images.map(item => (
+              <div>
+                <Gallery alt={item.altText} source={item.imageUrl} />
+              </div>
+            ))
+          }
         </div>
       </div>
     )    
